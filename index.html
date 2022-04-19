@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios - Solução</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios Python - Módulo 01</h1>
+        <h2>Infinity School</h2>
+    </header>
+
+    <main>
+        <div>
+            <p class="enunciado">Questão 01 - Faça um programa que converta metros para centímetros</p>
+            <button onclick="mostrar1()">Mostrar solução</button>
+            <button onclick="ocultar1()">Ocultar solução</button>
+            <p id="solucao1" class="solucao">valor = float(input('Informe o valor em metros a ser convertido: '))<br>
+                valor_final = valor * 100<br> <br>
+                
+                print(f'\nO valor final em centímetros vale {valor_final}cm')</p>
+                <hr>
+        </div>
+
+        <div>
+            <p class="enunciado">Questão 02 - Faça um programa que peça o raio de um círculo, calcule e mostre a sua área</p>
+            <button onclick="mostrar2()">Mostrar solução</button>
+            <button onclick="ocultar2()">Ocultar solução</button>
+            <p id="solucao2" class="solucao">raio = float(input('Informe o valor do raio do círculo em cm: ')) <br>
+                area = 3.1415 * (raio**2) <br> <br>
+                
+                print(f'\nO valor da área do círculo vale {area}cm²')</p>
+                <hr>
+        </div>
+
+        <div>
+            <p class="enunciado">Questão 03 - Faça um programa que peça o raio de um círculo, calcule e mostre a sua área usando a biblioteca MATH</p>
+            <button onclick="mostrar3()">Mostrar solução</button>
+            <button onclick="ocultar3()">Ocultar solução</button>
+            <p id="solucao3" class="solucao">import math<br> <br>
+
+                raio = float(input('Informe o valor do raio do círculo em cm: ')) <br>
+                area = (raio**2)*math.pi <br> <br>
+                
+                print(f'\nO valor da área do círculo vale {area:.2f}cm²')</p>
+                <hr>
+        </div>
+
+        <div>
+            <p class="enunciado">Questão 04 - Faça um programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius</p>
+            <button onclick="mostrar4()">Mostrar solução</button>
+            <button onclick="ocultar4()">Ocultar solução</button>
+            <p id="solucao4" class="solucao">TF = float(input('Informe a temperatura em graus Fahrenheit: ')) <br>
+                TC = ((TF-32)*5)/9 <br> <br>
+                
+                print(f'A temperatura em graus Celsius vale {TC:.2f}ºC')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 05 - Faça um programa que peça a temperatura em graus Celsius, transforme e mostre a temperatura em graus Fahrenheit</p>
+            <button onclick="mostrar5()">Mostrar solução</button>
+            <button onclick="ocultar5()">Ocultar solução</button>
+            <p id="solucao5" class="solucao">TC = float(input('Informe a temperatura em graus Celsius: ')) <br>
+                TF = ((TC*9)/5)+32 <br> <br>
+                
+                print(f'A temperatura em graus Celsius vale {TF:.2f}ºF')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 06 - Imprima um número em tela</p>
+            <button onclick="mostrar6()">Mostrar solução</button>
+            <button onclick="ocultar6()">Ocultar solução</button>
+            <p id="solucao6" class="solucao">print(14)</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 07 - Crie uma variável com número inteiro e imprima a variável</p>
+            <button onclick="mostrar7()">Mostrar solução</button>
+            <button onclick="ocultar7()">Ocultar solução</button>
+            <p id="solucao7" class="solucao">var = 14 <br>
+                print(var)</p>
+            <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 08 - Peça ao usuário um número e depois imprima o número em tela</p>
+            <button onclick="mostrar8()">Mostrar solução</button>
+            <button onclick="ocultar8()">Ocultar solução</button>
+            <p id="solucao8" class="solucao">num = int(input('Escolha um número a ser impresso: ')) <br>
+                print(f'O número escolhido foi o {num}')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 09 - Faça um programa que peça dois números e depois imprima a soma</p>
+            <button onclick="mostrar9()">Mostrar solução</button>
+            <button onclick="ocultar9()">Ocultar solução</button>
+            <p id="solucao9" class="solucao">num1 = int(input('Informe o primeiro número: ')) <br>
+                num2 = int(input('Informe o segundo número: ')) <br>
+                soma = num1 + num2 <br> <br>
+                
+                print(f'\nA soma dos números escolhidos foi {soma}')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 10 - Faça um programa que peça quatro notas e calcule a média. Ao final, mostre todas as notas e depois a média</p>
+            <button onclick="mostrar10()">Mostrar solução</button>
+            <button onclick="ocultar10()">Ocultar solução</button>
+            <p id="solucao10" class="solucao">notas = [] <br>
+                media = 0 <br>
+                for i in range(1,5): <br>
+                    nota = float(input(f'Digite a nota da {i}ª prova: \n')) <br>
+                    notas.append(nota) <br>
+                    media = media + nota <br> <br>
+                
+                for i in range(4): <br>
+                    print(f'A nota da {i+1}ª prava foi: {notas[i]}') <br> <br>
+                
+                print(f'Tendo o aluno como média final: {media/4}')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 11 - Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em m² da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3m² e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidade de latas de tintas a serem compradas e o preço total</p>
+            <button onclick="mostrar11()">Mostrar solução</button>
+            <button onclick="ocultar11()">Ocultar solução</button>
+            <p id="solucao11" class="solucao">area = float(input('Informe a area em m² a ser pintada: ')) <br> <br>
+
+                if (area%18) == 0: <br>
+                    latas = int(area/18) <br>
+                    total = latas * 80 <br>
+                else: <br>
+                    latas = int((area//18)+1) <br>
+                    total = latas * 80 <br> <br>
+                
+                print(f'Serão necessárias {latas} latas de tinta, totalizando um valor de R${total:.2f}')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 12 - Peça ao usuário a velocidade em km/h e converta para m/s</p>
+            <button onclick="mostrar12()">Mostrar solução</button>
+            <button onclick="ocultar12()">Ocultar solução</button>
+            <p id="solucao12" class="solucao">velocidadekm = float(input('Informe a velocidade em km/h: ')) <br>
+                velocidadem = velocidadekm/3.6 <br>
+                print(f'\nA velocidade covertida é {velocidadem:.2f}m/s')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 13 - Altere o programa acima para que a velocidade solicitada seja em m/s e converta para km/h</p>
+            <button onclick="mostrar13()">Mostrar solução</button>
+            <button onclick="ocultar13()">Ocultar solução</button>
+            <p id="solucao13" class="solucao">velocidadem = float(input('Informe a velocidade em m/s: ')) <br>
+                velocidadekm = velocidadem*3.6 <br>
+                print(f'\nA velocidade covertida é {velocidadekm:.2f}km/h')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 14 - Peça três números inteiros e imprima a soma deles três</p>
+            <button onclick="mostrar14()">Mostrar solução</button>
+            <button onclick="ocultar14()">Ocultar solução</button>
+            <p id="solucao14" class="solucao">soma = 0 <br> <br>
+
+                for i in range(3): <br>
+                    num = int(input(f'Digite o {i+1}º número: ')) <br>
+                    soma = soma + num <br> <br>
+                
+                print(f'A soma dos três número digitados vale {soma}.')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 15 - Um funcionário recebeu um aumento de 25% no seu salário. Peça o salário atual e mostre em tela o seu aumento</p>
+            <button onclick="mostrar15()">Mostrar solução</button>
+            <button onclick="ocultar15()">Ocultar solução</button>
+            <p id="solucao15" class="solucao">salario = float(input('Informe o salário do funcionário: ')) <br>
+                novo_salario = salario*1.25 <br> <br>
+                
+                print(f'O salário do funcionário reajustado em 25% passou a valer R${novo_salario:.2f}.')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 16 - Um prêmio da loteria de R$540.000,00 será dividido entre 3 pessoas. Informe o valor recebido por cada pessoa</p>
+            <button onclick="mostrar16()">Mostrar solução</button>
+            <button onclick="ocultar16()">Ocultar solução</button>
+            <p id="solucao16" class="solucao">total_pessoa = 540000/3 <br>
+
+                print(f'Cada pessoa receberá a quantia de R${total_pessoa:.2f}.')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 17 - O prêmio acima foi entregue a três ganhadores de um concurso. O primeiro receberá 47%, o segundo receberá 31% e o terceiro receberá o restante. Calcule e mostre em tela o valor recebido por cada ganhador.</p>
+            <button onclick="mostrar17()">Mostrar solução</button>
+            <button onclick="ocultar17()">Ocultar solução</button>
+            <p id="solucao17" class="solucao">premio = 540000 <br>
+                premio1 = round(premio*0.47,2) <br>
+                premio2 = round(premio*0.31,2) <br>
+                premio3 = round(premio*(1-0.31-0.47),2) <br><br>
+                
+                print(f'O primeiro receberá R${premio1}, o segundo receberá R${premio2} e o terceiro R${premio3}.')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 18 - Faça um programa que peça dois números inteiros e um número real. Calcule e mostre: <br>
+                a)	O produto do dobro do primeiro com a metade do segundo <br>
+                b)	A soma do triplo do primeiro com o terceiro <br>
+                c)	O terceiro valor elevado ao cubo</p>
+            <button onclick="mostrar18()">Mostrar solução</button>
+            <button onclick="ocultar18()">Ocultar solução</button>
+            <p id="solucao18" class="solucao">num1 = int(input('Informe o primeiro número inteiro: ')) <br>
+                num2 = int(input('Informe o segundo número inteiro: ')) <br>
+                num3 = float(input('Informe um número real: ')) <br><br>
+                
+                a = (num1*2)*(num2/2) <br>
+                b = (num1*3)+num3 <br>
+                c = num3**3 <br><br>
+                
+                print(f'a)	O produto do dobro do primeiro com a metade do segundo: {a}') <br>
+                print(f'b)	A soma do triplo do primeiro com o terceiro: {b}') <br>
+                print(f'c)	O terceiro valor elevado ao cubo: {c}')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 19 - Peça três valores (um int, um float e um str) ao usuário e ao final, mostre em tela o valor e o tipo de cada um</p>
+            <button onclick="mostrar19()">Mostrar solução</button>
+            <button onclick="ocultar19()">Ocultar solução</button>
+            <p id="solucao19" class="solucao">inteiro = int(input('Informe o valor de um número inteiro: ')) <br>
+                flutuante = float(input('Informe o valor de um número flutuante: ')) <br>
+                palavra = input('Informe uma string: ') <br> <br>
+                
+                print(f'A variável {inteiro} é do tipo {type(inteiro)}.') <br>
+                print(f'A variável {flutuante} é do tipo {type(flutuante)}.') <br>
+                print(f'A variável {palavra} é do tipo {type(palavra)}.')</p>
+                <hr>
+        </div>
+        
+        <div>
+            <p class="enunciado">Questão 20 - Mostre em tela o valor da divisão de um número inteiro digitado pelo usuário por dois</p>
+            <button onclick="mostrar20()">Mostrar solução</button>
+            <button onclick="ocultar20()">Ocultar solução</button>
+            <p id="solucao20" class="solucao">SEM SOLUÇÃO</p>
+                <hr>
+        </div>
+        
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>

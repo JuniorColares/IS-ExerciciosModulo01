@@ -1,0 +1,31 @@
+#solucao1, #solucao2, #solucao3, #solucao4, #solucao5, #solucao6, #solucao7, #solucao8, #solucao9, #solucao10, #solucao11, #solucao12, #solucao13, #solucao14, #solucao15, #solucao16, #solucao17, #solucao18, #solucao19, #solucao20 {
+    display: none;
+}
+
+button {
+    color: #fff;
+    background-color: #c3c3c3;
+    width: 150px;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px #ccc;
+    background-color: #aaa;
+    color: #fff;
+    cursor: pointer;
+}
+div {
+    margin: 20px 0 ;
+}
+
+.solucao {
+    border: 2px solid red;
+    padding: 10px;
+    color: brown;
+}
+
+h1, h2 {
+    text-align: center;
+}
